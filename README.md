@@ -2,7 +2,8 @@
 
 A Gradio-based web application for video object tracking using Grounded SAM2, with integrated gaze data processing for Tobii Pro 3 and Pupil Neon eye trackers.
 
-Overview
+## Overview
+
 This tool combines the power of Grounded SAM2 (Segment Anything Model 2 with grounding) with eye-tracking data to enable automated, gaze-aware object segmentation and tracking across multiple videos. It is particularly suited for research workflows where you want to track objects of interest identified through participant gaze.
 ---
 
