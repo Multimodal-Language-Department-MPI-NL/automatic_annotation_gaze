@@ -1,0 +1,11 @@
+CLAUDE.md
+
+.gradio
+
+checkpoints/
+
+__pycache__/
+
+gdino_checkpoints/
+
+tracking_results
