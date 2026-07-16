@@ -1,5 +1,7 @@
 # 👁️ GroundingGaze: An Interactive Pipeline for Automatic Gaze Annotation
 
+### Official implementation of the paper accepted at the **ACM International Conference on Multimodal Interaction (ICMI 2026)**.
+
 GroundingGaze is an interactive web application for automatic gaze annotation in eye-tracking videos. It combines open-vocabulary object detection, promptable video segmentation, and interactive refinement to help researchers efficiently map gaze to regions of interest (ROIs) while maintaining full control over the annotation process.
 
 The pipeline integrates:
