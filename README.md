@@ -1,20 +1,17 @@
 # 👁️ GroundingGaze: An Interactive Pipeline for Automatic Gaze Annotation
 
-A Gradio-based web application for video object tracking using Grounded SAM2, with integrated gaze data processing for Tobii Pro 3 and Pupil Neon eye trackers.
+GroundingGaze is an interactive web application for automatic gaze annotation in eye-tracking videos. It combines open-vocabulary object detection, promptable video segmentation, and interactive refinement to help researchers efficiently map gaze to regions of interest (ROIs) while maintaining full control over the annotation process.
 
-## Overview
+The pipeline integrates:
+- 🎯 **Grounding DINO** for open-vocabulary object detection from text prompts
+- 🎥 **SAM2** for temporally consistent video segmentation and object tracking
+- ✍️ **Human-in-the-loop refinement** through interactive positive and negative point corrections
+- 🖥️ **Gradio** for an accessible browser-based interface requiring no machine learning expertise
 
-This tool combines the power of [Grounded SAM2](https://github.com/IDEA-Research/Grounded-SAM-2) (Segment Anything Model 2 with grounding) with eye-tracking data to enable automated, gaze-aware object segmentation and tracking across multiple videos. It is particularly suited for research workflows where you want to track objects of interest identified through participant gaze.
-
----
-
-## Features
-
-- 🎯 **Grounded SAM2 tracking** — automatic object detection and segmentation using text prompts or gaze-guided inputs
-- 👁️ **Gaze integration** — supports Tobii Pro 3 and Pupil Neon eye tracker data formats
-- 🗂️ **Multi-video processing** — batch process multiple video files in one session
-- 🖥️ **Gradio web UI** — browser-based interface, no coding required to run
-- 📤 **CSV export** — converts raw gaze data to a unified CSV format for downstream analysis
+Additional features include:
+- 👁️ Support for Tobii Pro 3 and Pupil Neon eye-tracker data
+- 🗂️ Batch processing of multiple videos
+- 📤 Export to CSV, JSON, ELAN, annotated videos, and segmentation masks
 
 ---
 
@@ -120,6 +117,5 @@ demo.launch(
 
 ## Acknowledgements
 
-- [Segment Anything Model 2 (SAM2)](https://github.com/facebookresearch/segment-anything-2) — Meta AI
-- [Grounded SAM2](https://github.com/IDEA-Research/Grounded-SAM-2) — IDEA Research
+- [Segment Anything Model 2 (SAM2)](https://github.com/facebookresearch/segment-anything-2) — Meta 
 - [Gradio](https://www.gradio.app/) — Hugging Face
